@@ -1,0 +1,242 @@
+*{
+     padding: 0;
+     margin: 0;
+    box-sizing: border-box;
+}
+    body
+{
+    background-image: url(background3.png);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu-bar
+{
+    background: beige;
+    text-align: center;
+    text-decoration: none;
+}
+.menu-bar ul
+{
+    display:inline-flex;
+    list-style: none;
+    color: green;
+    text-decoration: none;
+}
+.menu-bar ul li
+{
+    width: 120;
+    margin: 20px;
+    padding: 10px;
+}
+.menu-bar ul li a
+{
+    text-decoration:none;
+    color: black;
+}
+.active,.menu-bar ul li:hover
+{
+background: #bab0dd;
+border-radius: 3px;
+}
+.menu-bar.fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display:none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 15pax;
+    margin-left: -15pax;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 10px;  
+}  
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: beige;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+color: black;
+}
+.fa-angle-right
+{
+    float:right
+}
+.sub-menu-2
+{
+    display: none;
+    background: blue;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display : block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgba(0,1000,);  
+}
+.logo img{
+    float: left;
+    width: 80px;
+    height: auto;
+}
+.center{
+    margin-left: 30%;
+    margin-top: 100px;
+    font-family: sans-serif;
+    align-items: center;
+    border: 20px;
+    max-width: 800px;
+    display: flex;}
+    .title{
+     margin-left: 32%;
+    margin-top: 99px;
+    font-family: sans-serif;
+    align-items: center;
+    border: 20px;
+    max-width: 800px;
+    display: flex;}  
+    .joe{
+    margin-left: 38%;
+    margin-top: 50px;
+    font-family: sans-serif;
+    align-items: center;
+    border: 20px;
+    max-width: 800px;
+    display: flex;} 
+    .center h1{
+        color:blue;
+        font-family: sans-serif;
+        font-style:normal;
+        font-weight: 100px;
+        text-decoration-color: beige;
+        text-transform: capitalize;
+        initial-letter: capitalize;
+        letter-spacing: 2px;
+    }
+   .title h1{
+        color: rgba(0, 255, 38, 0.769);
+        font-family: sans-serif;
+        font-style:normal;
+        font-weight: 100px;
+        text-decoration-color: beige;
+        text-transform: capitalize;
+        initial-letter: capitalize;
+        letter-spacing: 2px;}
+        .joe h2{
+            color: aquamarine;
+            letter-spacing: 50;
+        }
+        .about me{
+            background-image:none;
+        }
+        .footer{
+            background-color: #111;
+        }
+        .footercontainer{
+            width: 100%;
+            padding:70px 30px 20px;
+        }
+        .socialicons{
+            display: flex;
+            justify-content: center;
+        }
+        .socialicons a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: whitesmoke;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        .socialicons a i{
+            font-size: 2em;
+            color:black;
+            opacity: 0,9;
+        }
+        /*hover effects on social media icons*/
+        .socialicons a hover i {
+            background-color: #111;
+            transition: 0.55;}
+            .socialicons a:hover i{
+                color: white;
+                transition: 0.5;
+            }
+            .footernav{
+                margin: 30px 0;
+            }
+            .footernav ul{
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+            }
+                .footernav ul li a{
+                    color: white;
+                    margin: 20px;
+                    text-decoration: none;
+                    font-size: 1.3em;
+                    opacity: 0.7;
+                    transition: 0.5s;
+                }
+            .footernav ul li a hover{
+                opacity: 1;
+            }
+            .footerbottom{
+                background-color: #000;
+                padding: 20px;
+                text-align: center;
+            }
+            .footerbottom p{
+                color: white;
+            }
+            .designer{
+                opacity: 0.7;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 400;
+                margin: 0px 5px;
+            }
+            @media(max-width: 700px){
+            .footernav ul{
+                flex-direction: column;
+            }
+            .footernav ul li{
+                width: 100%;
+                text-align: center;
+                margin: 10px;}
+            }
+            .checkbtn{
+                font-size: 30px;
+                color: white;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+                display: none;
+            }    
+            .menu-icon{
+                display: block;
+                float: right;
+                margin-top: 15px;
+                margin-left: 0px;
+                max-width: 100px;
+                margin-inline: 50;
+            }
